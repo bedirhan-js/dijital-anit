@@ -1,0 +1,117 @@
+.karisanlar li {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.karisanlar span {
+  background: linear-gradient(to top, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 25px;
+  color: transparent;
+}
+
+.deliller li {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.deliller span {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+
+  font-size: 25px;
+  color: transparent;
+}
+
+.etkilenenler li {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.etkilenenler span {
+  background: #c0c0aa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #1cefff,
+    #c0c0aa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #1cefff,
+    #c0c0aa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-clip: text;
+
+  font-size: 25px;
+  color: transparent;
+}
+
+.kamuoyu-tepkisi li {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.kamuoyu-tepkisi span {
+  background: #bc4e9c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f80759,
+    #bc4e9c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f80759,
+    #bc4e9c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-clip: text;
+
+  font-size: 25px;
+  color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .karisanlar li {
+    font-size: 20px;
+  }
+
+  .karisanlar span {
+    font-size: 20px;
+  }
+
+  .deliller li {
+    font-size: 20px;
+  }
+
+  .deliller span {
+    font-size: 20px;
+  }
+
+  .etkilenenler li {
+    font-size: 20px;
+  }
+
+  .etkilenenler span {
+    font-size: 20px;
+  }
+
+  .kamuoyu-tepkisi li {
+    font-size: 20px;
+  }
+
+  .kamuoyu-tepkisi span {
+    font-size: 20px;
+  }
+}

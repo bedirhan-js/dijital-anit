@@ -1,0 +1,62 @@
+.select {
+  position: relative;
+  min-width: 200px;
+}
+
+.select h3 {
+  border: 1px solid white;
+  padding: 5px;
+  margin-top: 23px;
+}
+
+.select-label {
+  display: none;
+}
+
+.select-arrow-down {
+  position: absolute;
+  right: 12px;
+  top: 67px;
+  color: #9098a9;
+  pointer-events: none;
+}
+
+.select select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 7px 40px 7px 12px;
+  width: 100%;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+  background: transparent;
+  color: white;
+}
+
+.select select:required:invalid {
+  color: white;
+}
+
+.yillar option {
+  color: antiquewhite;
+  background: black;
+  border: 1px solid #e8eaed;
+}
+
+.select select option[value=""][disabled] {
+  display: none;
+}
+
+.select select:focus {
+  outline: none;
+  border-color: #4489f7;
+  box-shadow: 0 0 0 2px rgba(#4489f7, 0.2);
+}
+
+.select select:hover + .select-arrow-down {
+  color: #4489f7;
+}

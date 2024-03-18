@@ -1,0 +1,67 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 45rem;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 5rem;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* label {
+  display: block;
+  margin-bottom: 5px;
+} */
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-button {
+  width: 100%;
+  height: 2rem;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 13px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.form-button:hover {
+  transition: box-shadow 0.3s ease;
+  box-shadow: rgba(255, 254, 254, 0.16) 0px 3px 6px,
+    rgba(255, 254, 254, 0.23) 0px 3px 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    height: auto;
+  }
+  .form-container {
+    margin: 15px;
+    margin-bottom: 10rem;
+  }
+}

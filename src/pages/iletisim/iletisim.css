@@ -1,0 +1,159 @@
+.container-iletisim {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 25rem 0rem 25rem;
+}
+
+.content-section {
+  width: 60%;
+}
+
+.contact-section {
+  width: 30%;
+}
+
+.sosyal-medya-ikon {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  color: black;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 15px rgba(255, 252, 252, 0.3);
+}
+
+.sosyal-medya-ikon:hover {
+  transform: scale(0.8);
+}
+
+.iletisim-padding {
+  display: flex;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  padding: 9px;
+}
+
+.sosyal-medya-ikon svg {
+  font-size: 32px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.iletisim-baslik {
+  font-size: 7rem;
+  text-align: center;
+  margin: 1rem 0px 10rem 0px;
+}
+
+.content-section p {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.select-iletisim {
+  position: relative;
+  min-width: 200px;
+}
+
+.select-iletisim h3 {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.select-iletisim-label {
+  display: none;
+}
+
+.select-arrow-down-iletisim {
+  position: absolute;
+  right: 12px;
+  top: 67px;
+  color: #9098a9;
+  pointer-events: none;
+}
+
+.select-iletisim select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 7px 40px 7px 12px;
+  width: 100%;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+  background: transparent;
+  color: white;
+}
+
+.select-iletisim select:required:invalid {
+  color: white;
+}
+
+.kategoriler option {
+  color: antiquewhite;
+  background: black;
+  border: 1px solid #e8eaed;
+}
+
+.select-iletisim select option[value=""][disabled] {
+  display: none;
+}
+
+.select-iletisim select:focus {
+  outline: none;
+  border-color: #4489f7;
+  box-shadow: 0 0 0 2px rgba(#4489f7, 0.2);
+}
+
+.select-iletisim select:hover + .select-arrow-down-iletisim {
+  color: #4489f7;
+}
+
+@media screen and (max-width: 768px) {
+  .container-iletisim {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .select-iletisim {
+    position: relative;
+    min-width: 200px;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .sosyal-medya-ikon {
+    margin: 5px;
+  }
+
+  .content-section {
+    width: initial;
+  }
+
+  .content-section p {
+    font-size: 22px;
+  }
+  .contact-section {
+    display: flex;
+    border: 1px solid white;
+    width: 96%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+  }
+
+  .iletisim-baslik {
+    font-size: 5rem;
+    margin: 1rem 0px 4rem 0px;
+  }
+}

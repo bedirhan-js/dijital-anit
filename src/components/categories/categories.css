@@ -1,0 +1,37 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  max-width: 286px;
+  margin-bottom: 0;
+  /* max-height: 18rem;
+    overflow-y: auto; */
+}
+
+.categories li {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 23px;
+  padding: 4px 8px 6px 21px;
+}
+
+.categories li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.categories h3 {
+  border: 1px solid white;
+  padding: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .categories ul {
+    max-width: 100%;
+  }
+}

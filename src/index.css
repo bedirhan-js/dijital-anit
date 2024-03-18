@@ -1,0 +1,154 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color-scheme: light dark;
+  margin: 0;
+  padding: 0;
+}
+
+.detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.detail-content {
+  width: 70%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  padding: 20px;
+}
+
+.image-section img {
+  max-width: 100%;
+  /* min-width: 40rem; */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 40rem;
+}
+
+.info-section {
+  text-align: left;
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+}
+
+.info-section h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.baslik {
+  text-align: center;
+}
+
+.event-details {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.awareness-info {
+  margin-top: 20px;
+}
+
+.awareness-info h3 {
+  color: white;
+}
+
+.awareness-info p {
+  color: #dedede;
+  margin-bottom: 10px;
+}
+
+.border {
+  border: 1px solid white;
+  padding: 2rem;
+}
+
+blockquote {
+  border-left: 4px solid #333;
+  padding-left: 15px;
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 40px;
+}
+
+q {
+  quotes: "“" "”";
+  font-style: italic;
+}
+
+.haber-baglantilari li {
+  font-size: 25px;
+}
+
+.haber-baglantilari li a {
+  background: linear-gradient(to bottom, #fdfc47, #24fe41);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  font-size: 25px;
+  color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .info-section {
+    text-align: initial;
+    max-width: 100%;
+    margin: 0;
+    padding: 15px;
+    width: auto;
+  }
+
+  .detail-content {
+    width: initial;
+  }
+
+  .baslik {
+    font-size: 20px;
+    text-align: initial;
+  }
+
+  .border {
+    padding: 10px;
+  }
+
+  .image-section {
+    padding: 15px;
+  }
+
+  .image-section img {
+    max-width: 100%;
+    min-width: 5rem;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 48rem;
+  }
+
+  blockquote {
+    font-size: 25px;
+  }
+}

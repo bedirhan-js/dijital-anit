@@ -1,0 +1,32 @@
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3rem;
+}
+
+.sidebar-off {
+  line-height: 1.5;
+  font-family: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: rgb(38, 40, 44);
+  color: rgb(166, 167, 171);
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.25rem;
+  border-width: 0.0625rem 0.0625rem 0.1875rem;
+  border-style: solid;
+  border-color: rgb(54, 57, 64);
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: -webkit-static;
+    position: static;
+  }
+
+  .sidebar-off {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "resim": "yolsuzluk_resim.jpg",
+  "baslik": "Şirket X Yolsuzluk Skandalı",
+  "tarih": "2022-01-01",
+  "yolsuzluga_karisanlar": [
+    {
+      "kisi_pozisyonu": "Yönetici",
+      "kisi_adi_soyadi": "Ahmet Yolsuz"
+    },
+    {
+      "kisi_pozisyonu": "Muhasebeci",
+      "kisi_adi_soyadi": "Ayşe Hırsız"
+    }
+  ],
+  "yolsuzluk_turu": "Finansal Yolsuzluk",
+  "aciklama": "Şirket X'te finansal raporlarda usulsüzlük yapıldığı tespit edildi...",
+  "deliller": ["Belge 1", "Belge 2"],
+  "medya_baglantilari": [
+    {
+      "haber_baglantisi": "https://haberlinki.com/1",
+      "haber_kaynagi": "Haber Kaynağı 1"
+    },
+    {
+      "haber_baglantisi": "https://haberlinki.com/2",
+      "haber_kaynagi": "Haber Kaynağı 2"
+    }
+  ],
+  "hukuki_surec": "Olayla ilgili hukuki süreç başlatıldı...",
+  "kamuoyu_tepkisi": "Kamuoyu olaya büyük tepki gösterdi.",
+  "guncel_durum": "Olayın güncel durumu...",
+  "etkilenen_taraflar": ["Şirket çalışanları", "Hisse sahipleri"]
+}

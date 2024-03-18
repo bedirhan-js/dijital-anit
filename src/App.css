@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 10rem;
+  gap: 5rem;
+}
+
+.veri-bulunamadi {
+  font-size: 24px;
+}
+
+.cart-container {
+  width: 35rem;
+}
+
+*::selection {
+  background-color: #cd0000;
+  color: #ffd900;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #15151a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.search-results {
+  opacity: 0; /* Başlangıçta sonuçları gizle */
+  transform: translateY(-100%); /* Başlangıçta yukarıda göster */
+  animation: slideIn 0.5s ease forwards; /* slideIn adında bir animasyon tanımla */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100%); /* Yukarıdan gelerek başla */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Yere inerek bitir */
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    display: block;
+  }
+
+  .cart-container {
+    width: 100%;
+  }
+}

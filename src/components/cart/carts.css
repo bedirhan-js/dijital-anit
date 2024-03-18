@@ -1,0 +1,84 @@
+.custom-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 35rem;
+  max-height: 15rem;
+}
+
+.image-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resmi kare şeklinde koruyun */
+  border-radius: 8px 0 0 8px;
+}
+
+.content-container {
+  flex: 1; /* content-container'ın genişliğini ayarlamadan bırakın */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* İki satıra kadar göster */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.card-description {
+  color: white;
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* İki satıra kadar göster */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.button-10 {
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 13px;
+  margin: 0;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .custom-card {
+    flex-direction: column;
+    max-width: 35rem;
+    max-height: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  .image-container img {
+    border-radius: 8px 8px 0 0;
+  }
+}
